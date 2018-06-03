@@ -12,6 +12,15 @@ spring:
       bindings:
         outStream: #消息队列的名称
           group: order
+  sleuth:
+    sampler:
+      percentage: 1
+  zipkin:
+    base-url: http://192.168.142.129:9411/
+#    locator:
+#      discovery:
+#        enabled: true
+
 #spring:
 #  application:
 #    name: order
@@ -44,4 +53,8 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 1000
+            timeoutInMilliseconds: 3000
+logging:
+  level:
+    org.springframework.cloud.netflix.feign: debug
+
