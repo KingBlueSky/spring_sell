@@ -37,3 +37,11 @@ server:
 management:
   security:
     enabled: false
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
