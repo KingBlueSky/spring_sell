@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/KingBlueSky/config-repo.git
           username: 469799409@qq.com
-          password: jp80890912345
+          password: jp80qazwsxedc
           basedir: D:/jbwang/idea18/spring/baseDir
   rabbitmq:
     host: 192.168.142.129
